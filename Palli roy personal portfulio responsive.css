@@ -1,0 +1,377 @@
+
+
+body{
+  background-color:black;
+  color:white;
+     height: 100vh;
+     width: 100%;
+    text-transform: capitalize;
+    font-size: 12pt;
+    
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  border: 2px rgb(98, 12, 12);
+}
+
+.palli-img{
+  width: 300px;
+  height: 300px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:white;
+  font-size: 10pt;
+  text-transform: capitalize;
+}
+.bu{
+  border-radius: 15px;
+}
+.bu:hover{
+  background-color: purple;
+
+
+
+
+}
+nav ul li a:hover{
+  color: fuchsia;
+  cursor: pointer;
+  
+}
+#co{
+ color:orangered;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 18pt;
+      font-style: italic;
+          }
+
+          
+    h2{
+      
+      font-size: 20pt;
+      text-transform: uppercase;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: oblique;
+  }
+  button{
+    width: 80pt;
+
+  }
+  button a{
+    color: white;
+    text-transform: capitalize;
+    font-size: 10pt;
+  }
+  
+i{
+  font-size: 16pt;
+    color: orangered;
+}
+.ab{
+  font-size: 20pt;
+}
+.progress-bar{
+  background-color: coral;
+  color: black;
+  font-weight: bold;
+}
+
+
+ #ac  {
+  animation: any;
+ 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes any{
+  25%{
+    left:25px;
+    color:red;
+}
+
+}
+ #b {
+
+  animation: bye;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes bye{
+  25%{
+    left:25px;
+    color: yellow;
+}
+
+}
+#c {
+
+  animation: by;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes by{
+  50%{
+    left:50px;
+   color: aqua;
+    
+}
+
+}
+#d {
+
+  animation: ye;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes ye{
+  75%{
+    left:75px;
+ color: green;
+}
+
+}
+#f{
+
+  animation: him;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes him{
+  100%{
+    left:100px;
+    color: darkorange;
+ 
+}
+
+}
+.row{
+  position: relative;
+  top: 100pt;
+}
+.hi{
+  position: relative;
+  top: -40pt;
+}
+.dis{
+  font-size: 26pt;
+}
+
+i:hover{
+   transform: scale(1.2);
+    color: springgreen;
+}
+hr{
+  background-color:white;
+}
+.ei{
+  font-size: 14pt;
+  color: orangered;
+ 
+}
+.bt{
+  color: white;
+  border: none;
+  position: relative;
+  right: 180pt;
+}
+#style{
+  height: 250pt;
+  width: 450px;
+  border: 4px purple solid;
+  background-color:lightpink;
+  border-radius: 50%;
+  box-shadow: 8px 2px 8px 8px red;
+ 
+ 
+ 
+}
+.sp{
+  color: orangered;
+}
+#p2{
+  height: 200pt;
+  width: 400px;
+}
+.div{
+  height: 80pt;
+  width: 180pt;
+
+  text-align: justify;
+
+}
+p{
+font-family: serif;
+font-style: italic;
+}
+
+.progress-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(green 0% 95%, lightgrey 0% 5%);
+  position: relative;
+  
+}
+
+.progress-circle::before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  background:orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+.progress-circle span {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+ 
+}
+
+.progress-circle2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(green 0% 90%, lightgrey 0% 10%);
+  position: relative;
+  
+}
+
+.progress-circle2::before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  background:orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+.progress-circle2 span {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+ 
+}
+
+.progress-circle3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(green 0% 60%, lightgrey 0% 40%);
+  position: relative;
+  
+}
+
+.progress-circle3::before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  background:orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+.progress-circle3 span {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+ 
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+
+  .palli-img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 70px;
+
+  }
+  .row{
+    position: relative;
+    top: -15pt;
+  }
+  hr{
+    position: relative;
+    top: -100pt;
+  }
+  
+  nav ul li a{
+    justify-content: start;
+  }
+  #style{
+    height: 180px;
+    width:180px;
+
+  }
+  #p2{
+    height: 150px;
+    width: 150px;
+  }
+  .dis{
+    position: relative;
+    top: -40px;
+  }
+  .bottom{
+    position: relative;
+    top:30px;
+
+
+
+   }
+
+.top{
+  position: relative;
+  top: 20pt;
+}
+.con{
+  position: relative;
+  right: 0px;
+  
+}
+
+ 
+}
+
+
+
+
+

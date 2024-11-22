@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4bc2da9af6.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+    <style>
+       
+     
+        .heig{
+            height: 100vh;
+           
+        }
+        .topside{
+            height: 150px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .ls{
+            width: 77%;
+            float: left;
+        }
+        .rs{
+            width: 23%;
+            float: right;
+        }
+        .a{
+            border: 2px solid;
+            border-radius: 10px;
+            border-color: blueviolet;
+        }
+        .rsbox{
+         
+            box-shadow: 0px 5px 5px gray;
+            margin: auto;
+            border-radius: 10px;
+           border: 2px solid blueviolet;
+        }
+        .tb{
+            height: 200px;
+            overflow: auto;
+            
+           
+        }
+        .tb::-webkit-scrollbar {
+            display: none;
+        }
+        
+        
+       
+        .tlh{
+            display: none;
+        }
+       
+        .hi{
+            height: 130px;
+        }
+        .imgtop{
+            height: 100px;
+            width: 120px;
+        }
+        .sidenav{
+            display: none;
+        }
+        .rnd{
+            border-radius: 10px;
+        }
+        .yy{
+            color: white;
+        }
+        .vv{
+            font-size: 25px;
+        }
+        .brl{
+           
+            font-weight: bold;
+        }
+        
+        hr{
+            background-color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .log{
+            
+            margin-top: 150px;
+        }
+        .pic{
+            height: 40px;
+            width: 40px;
+        }
+        .p{
+            font-size: 8pt;
+
+        }
+        .hig{
+            width: 100%;
+            height: 500pt;
+        }
+        
+       
+        @media only screen and (max-width: 600px) {
+            #xy{
+                z-index: -1;
+            }
+
+            .choto{
+                height: 20pt;
+                width: 20pt;
+            }
+
+            *{
+                font-size:7px;
+            }
+            .hig{
+                width: 100%;
+                height: 100pt;
+            }
+            .high{
+                height: 10pt;
+                width: 10pt;
+            }
+
+           
+        
+            .yy{
+                font-size: 10px;
+                display: block;
+            }
+            .brl{
+                font-size: 10px;
+            }
+        .rsbox{
+            font-size: 5px;
+            
+        }
+            
+            .lsnh{
+                display: none;
+            }
+
+            .topside{
+            height: 100px;
+            width: 100%;
+        }
+        
+        
+        .tl{
+            width: 5%;
+            float: left;
+            height: 100px;
+        }
+        .tr{
+            width: 95%;
+            float: right;
+            height: 100px;
+        }
+       
+        .hi{
+            height: 100px;
+        }
+        .imgtop{
+            height: 80px;
+            width: 100px;
+        }
+        .tlh{
+            display: block;
+            position: relative;
+            left: 1%;
+            cursor: pointer;
+        }
+        .sidenav{
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            top: 0%;
+            z-index: 1;
+           
+        }
+        .ls{
+            width: 50%;
+        }
+        .rs{
+            width: 50%;
+        }
+        .log{
+            margin-top: 70px;
+        }
+        .pic{
+            width: 30px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row heig">
+            <div  class=" rnd col-2 ml-2 lsnh" style="background-color: blueviolet;">
+                <img src="sutudent_logo-removebg-preview.png" alt="" class=" d-block mx-auto mt-4" width="100px" height="100px ">
+                
+
+                    <div class="mt-4 ml-5">
+                        <img src="home icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Home</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="information icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Crouse info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="teaacher icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Tainer info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="class info icon logo.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Class info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="group info icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Group info</span>
+                    </div> 
+                    <div class="mt-4  ml-5">
+                        <img src="performance icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Performance</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="notice icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Notice</span>
+                    </div>
+                    <div class="log ml-5" >
+                        <img src="logout icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Logout</span>
+                    </div>
+                    
+                    
+                
+                
+                
+            </div>
+          
+            
+            <div id="x" class="sidenav ml-2" style="background-color: blueviolet;">
+                <span onclick=" snacl()">
+                    <button type="button" style="position: relative; top: 95vh; left: 30pt;">close</button>
+                 
+                    <img src="sutudent_logo-removebg-preview.png" alt="" class=" d-block mx-auto mt-4" width="100px" height="100px ">
+                
+
+                    <div class="mt-4 ml-5">
+                        <img src="home icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Home</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="information icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Crouse info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="teaacher icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Tainer info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="class info icon logo.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Class info</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="group info icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Group info</span>
+                    </div> 
+                    <div class="mt-4  ml-5">
+                        <img src="performance icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Performance</span>
+                    </div>
+                    <div class="mt-4  ml-5">
+                        <img src="notice icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Notice</span>
+                    </div>
+                    <div class="log ml-5">
+                        <img src="logout icon img.png" alt="" height="30px" width="30px">
+                        <span class="text-white">Logout</span>
+                    </div>
+                    
+                    
+                    
+                </span>
+            </div>
+
+            <div class="col">
+               <div class="container">
+                <div class="row">
+                    <div class="topside " style="background-color: blueviolet;">
+                       <div class="tlh" onclick="snav()">
+                        <div class="tl tlh d-flex justify-content-center align-items-center">
+                            <img class="high" src="information icon img.png" alt="">
+                        </div>
+
+                       </div>
+                       
+                        <div class="tr">
+                            <div class="container">
+                                <div  class=" hi d-flex justify-content-between align-items-center">
+                                    <div >
+                                        <span class="yy d-block ">Septembar 4,2024</span>
+                            <span class="yy vv d-block">welcome back,Jhon!</span>
+                            <span class="yy d-block">Always stay update in your student portal</span>
+                                    </div>
+   
+                                    <div  class=" hi d-flex align-items-end">
+                                        <img class="imgtop" src="student home page logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="xy" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#xy" data-slide-to="0" class="active"></li>
+                        <li  data-target="#xy" data-slide-to="1"></li>
+                        <li  data-target="#xy" data-slide-to="2"></li>
+                    </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="wd6.jpg" alt=""  class="hig">
+                    </div>
+            
+                    <div class="carousel-item" >
+                        <img src="wd1.jpg" alt="" class="hig" >
+                    </div>
+            
+                    <div  class="carousel-item">
+                        <img src="wd2.jpg" alt="" class="hig" >
+                    </div>
+                    <div  class="carousel-item">
+                        <img src="wd3.jpg" alt="" class="hig" >
+                    </div>
+                    <div  class="carousel-item">
+                        <img src="wd4.jpg" alt="" class="hig">
+                    </div>
+                    <div  class="carousel-item">
+                        <img src="wd5.jpg" alt="" class="hig"  >
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#xy"  data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#xy" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                </div>
+            
+
+
+
+
+
+                <div class="row">
+                    <div class="ls">
+                        <div class="container">
+                            <span class="font-weight-bold">Course Information</span>
+                            <div class="row">
+                                <div class="col a">
+                                    <div class="container">
+
+                                        <div class="d-flex align-items-center ml-1 justify-content-around">
+                                            <div>
+                                                <div class="d-flex justify-content-center mt-3">
+                                                    
+                                                    <a href="https://www.geeksforgeeks.org/learn-html/"><img src="html.png" alt=""  class="pic"  ></a>
+                                                    
+                                                    <a href="https://www.geeksforgeeks.org/roadmap-to-learn-javascript-for-beginners/"><img src="js.png" alt=""  class="pic" ></a>
+    
+                                                </div>
+                                                <br>
+                                                <div class="d-flex ">
+                                                    
+                                                    <a href="https://www.geeksforgeeks.org/learn-css/"><img src="css.png" alt=""  class="pic"  ></a>
+                                                  
+                                                    <a href="https://www.w3schools.com/bootstrap4/"> <img src="b4.jpg" alt=""  class="pic"></a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img src="php.png" alt=""  class="pic">
+                                            </div>
+    
+                                        </div>
+                                        <span class="d-block text-center ">Roadmap</span>
+                                        <span class="d-block text-center  p">WDD</span>
+                                    </div> 
+                                    </div>
+                                    
+                                <div class="col a ml-1">
+                                    <img class="mx-auto d-block mt-4" src="time period.png" alt="" height="50px" width="50px" >
+                                    <span class=" text-center d-block">off Day Fir-sat</span>
+                                    <span class="text-center d-block">4 Hours / 132 Days</span>
+                                    <span class="text-center d-block mt-2 p">Time Period</span>
+                                </div>
+                                <div class="col a ml-1">
+                                   
+                                     <img class="mt-4 ml-5" src="freelance.jpg" alt="" height="50px" width="50px"></a>
+                               
+                                     <img class="mt-4 ml-5" src="local outsource.jpeg" alt="" height="50px" width="50px"></a>
+                              <a href="https://tos.com.bd/a/platform-for-freelancing-outsourcing-from-bangladesh#:~:text=PeoplePerHour%20(General%20Freelancing),transactions%20between%20freelancers%20and%20clients.">
+                                <span class="text-center d-block mt-4">Marketplace</span>
+                              </a>
+                              
+                                  
+                                </div>
+                            </div>
+                            <span style="font-weight: bold;">Enrolled course</span>
+                            <div class="row">
+                                <div class="col a ">
+                                    <span class="text-center d-block mt-3 ">Class time:9am-1pm</span>
+                                <span class="text-center d-block ">Venue:RM Girls High School</span>
+                                <span class="text-center d-block ">Google class code:4uskc3y</span>
+                                <span class="text-center d-block ">Class info</span>
+                                <span class="text-center d-block p mt-4">WDD</span>
+                                </div>
+                                <div class="col a ml-1">
+                                    <span class="text-center d-block mt-3">Facebook Brl grp link: <a href="https://www.facebook.com/share/g/181ZRgztGn/">Click here</a></span>
+                                    <span class="text-center d-block ">Whatsapp grp link</span>
+                                    <span class="text-center d-block ">Facebook grp link: <a href="https://www.facebook.com/login.php/">Click here</a></span>
+                                    <span class="text-center d-block">Group info</span>
+                                    <span class="text-center d-block mt-4 p">WDD</span>
+                                </div>
+                                <div class="col a ml-1">
+                                    <img class="mx-auto d-block mt-3 " src="performance.jpeg" alt="" height="70px" width="70px">
+                                    <span class="text-center d-block">Poor/Good/Excellent</span>
+                                    <span class="text-center d-block">Performance</span>
+                                    <span class="text-center d-block mt-4 p">WDD</span><br>
+                                </div>
+                            </div>
+
+                            <span class="ml-3 mt-5 brl">BRL FB GRP Post Format</span>
+                            <span class="d-block">Daily task post Format:-</span>
+                            <span class="d-block">Please join this Facebook group</span>
+                            <span class="d-block">Each day,one of you will post a class work photo (2/3) and a class photo(1/2) to this Facebook</span>
+                            <span class="d-block">group</span>
+                            <span class="d-block">format:-</span>
+                            <span class="d-block">#Her_power_porject</span>
+                            <span class="d-block">#SP_NO 16</span>
+                            <span class="d-block">#Batch_ID(THA-PIR-WD-01)</span>
+                            <span class="d-block">#09th class</span>
+                            <span class="d-block">#Topice name</span>
+                            <span class="d-block">#ICT_Division</span>
+                            <span class="d-block">#Babylon_Resources_Limited</span>
+                            <span>#Smary_Bangladesh</span>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="rs ">
+                        <span class="ml-3 font-weight-bold text-center d-block">Course intructors</span>
+                        <div class="rsbox ml-3 ">
+                            
+                            <div class="container">
+                                <img class="rounded-circle mx-auto d-block choto" src="IMG_20210213_163936_6~3.jpg" alt="" height="70px" width="70px">
+                            
+                                <i class="fa-solid fa-user mr-1"> </i><span>Md.Kayum Uzzaman Partho</span>
+                            
+                                <i class="fa-solid fa-envelope"></i>
+                               
+                            <span>mrpartho470@gmail.com</span>
+                            <hr>
+                            
+                            <img class="rounded-circle choto mx-auto d-block" src="rakib sir.jpg" alt="" height="70px" width="70px">
+                           
+                            <i class="fa-solid fa-user mr-1"> </i>
+                            <span class="text-capitalize">md.rakibuzzaman rakib</span>
+                            <i class="fa-solid fa-envelope"></i>
+                    
+            
+                            <span>rakib.dh516@gmail.com</span>
+                            <br>
+                            <br>
+                            </div>
+                            
+
+
+                        </div>
+                        <span class="text-center mt-4 d-block" style="font-weight: bold;">Upozilla ICT Officer</span>
+                        <div class="rsbox md ml-3 mt-4">
+                           
+                            <div class="container">
+                                <img class="rounded-circle choto mx-auto d-block" src="sumit sir.jpg" alt="" height="70px" width="70px">
+                               
+                                <i class="fa-solid fa-user mr-1"> </i>
+                               
+                                <span > Sumit Gupta</span>
+                                <br>
+                                <i class="fa-solid fa-envelope"></i>
+
+
+                                <span>gupta.doict@gmail.com</span>
+                                <br>
+                                
+
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Pirgonj,Thakurgoan</span>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+
+                        <span class=" text-center mt-4 d-block" style="font-weight: bold;">Daily notice</span>
+                        <div class="rsbox tb d-block ml-3 mt-4 ">
+                            <span class="d-block font-weight-bold">Prelim payment due</span>
+                            <span class="d-block">Sorem ipsum dolor sit amat.</span>
+                            <span class="d-block">cosectetur odipiscing elit.</span>
+                            <span class="d-block text-warning">See more</span>
+                            <span class="d-block font-weight-bold">Exam schedule</span>
+                            <span class="d-block">Norem ipsurn dolor sit amet.</span>
+                            <span class="d-block">consectetur odipiscing elit.</span>
+                            <span class="d-block">Nunc vulputore liberoet velit</span>
+                            <span class="d-block">interdurn oc aliquet odio</span>
+                            <span class="d-block">mattis</span>
+                            <span class="d-block text-warning">see more</span>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo expedita ratione, tempora alias nobis, velit in eligendi debitis ab blanditiis aliquam recusandae consequatur cum, sed nisi eum eius iste.</P>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+               
+            </div>
+        </div>
+    </div>
+   
+    <script>
+         var abc = document.getElementById('x');
+        function snav(){
+           
+
+            abc.style.display = 'block';
+        }
+
+        function snacl(){
+            abc.style.display = 'none';
+        }
+    </script>
+   
+</body>
+</html>
